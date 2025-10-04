@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,12 +12,24 @@
       background: linear-gradient(180deg,#e6fff2 0%, #e6f7ff 100%);
       color:#1b2d2b;
       line-height:1.5;
+      direction:ltr;
     }
 
-    .wrap{max-width:1200px;margin:32px auto;padding:28px}
+    .wrap{max-width:1200px;margin:32px auto;padding:28px;text-align:left}
     .nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
     .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#2ecc71,#3498db);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#fff;
+      background:linear-gradient(135deg,#2ecc71,#3498db);
+      box-shadow:0 6px 18px rgba(0,0,0,.2);
+    }
     .brand h1{font-size:20px}
     .nav-links{display:flex;gap:18px;align-items:center}
     .nav-links a{color:#1e6a70;text-decoration:none;font-size:14px}
@@ -91,51 +103,51 @@
         <div class="logo">BS</div>
         <div>
           <h1>Bloom Shift</h1>
-          <div style="font-size:12px;color:#1e6a70">مشروع نمو وإزدهار</div>
+          <div style="font-size:12px;color:#1e6a70">Growth &amp; Bloom Project</div>
         </div>
       </div>
       <div class="nav-links">
-        <a href="#about">عن المشروع</a>
-        <a href="#work">الأبحاث</a>
-        <a href="#team">الفريق</a>
-        <button class="cta">تواصل</button>
+        <a href="#about">About</a>
+        <a href="#work">Research</a>
+        <a href="#team">Team</a>
+        <button class="cta">Contact</button>
       </div>
     </nav>
 
     <section class="hero">
       <div class="hero-left">
-        <span class="kicker">إطلاق جديد</span>
+        <span class="kicker">New Launch</span>
         <h2>Bloom Shift — Flower Identifier with Blooming &amp; Location Info</h2>
-        <p class="lead">ارفع صورة الزهرة واحصل على توقعات بالاسم مع محتوى من ويكيبيديا، فترة التزهير (DuckDuckGo)، وروابط الموقع (Google Maps).</p>
+        <p class="lead">Upload a flower photo and get predictions with Wikipedia info, blooming period (DuckDuckGo), and location links (Google Maps).</p>
         <div class="actions">
-          <button class="btn-primary" onclick="window.location.href='https://huggingface.co/spaces/SaifEhab/Flower_Identifier'">ارفع صورة</button>
-          <button class="btn-ghost" onclick="openModal()">طريقة العمل</button>
+          <button class="btn-primary" onclick="window.location.href='https://huggingface.co/spaces/SaifEhab/Flower_Identifier'">Upload</button>
+          <button class="btn-ghost" onclick="openModal()">How it works</button>
         </div>
 
         <div class="grid" style="margin-top:22px">
           <div class="card">
-            <h3>معلومات عن الورد</h3>
-            <p>يمكنك قراءة المزيد عن الورود عبر <a href="https://ar.wikipedia.org/wiki/ورد" target="_blank">ويكيبيديا</a>.</p>
+            <h3>Flower Info</h3>
+            <p>Read more on <a href="https://en.wikipedia.org/wiki/Rose" target="_blank">Wikipedia</a>.</p>
           </div>
           <div class="card">
-            <h3>أبحاث حول النباتات</h3>
-            <p>اطلع على <a href="https://scholar.google.com/scholar?q=flowers+blooming" target="_blank">أبحاث أكاديمية</a> حول مواسم التزهير.</p>
+            <h3>Research</h3>
+            <p>Explore <a href="https://scholar.google.com/scholar?q=flowers+blooming" target="_blank">academic papers</a> about blooming seasons.</p>
           </div>
           <div class="card">
-            <h3>أماكن الانتشار</h3>
-            <p>استكشف أماكن الورود حول العالم عبر <a href="https://www.google.com/maps/search/flowers/" target="_blank">خرائط جوجل</a>.</p>
+            <h3>Distribution</h3>
+            <p>See where flowers grow on <a href="https://www.google.com/maps/search/flowers/" target="_blank">Google Maps</a>.</p>
           </div>
         </div>
       </div>
 
       <aside class="hero-right">
-        <h3 style="margin-bottom:8px;color:#1e6a70">آخر المستجدات</h3>
-        <p style="font-size:13px;color:#333">تم نشر نموذج أولي للتجربة التفاعلية — شاركنا رأيك لتحسين واجهة المستخدم.</p>
+        <h3 style="margin-bottom:8px;color:#1e6a70">Latest Updates</h3>
+        <p style="font-size:13px;color:#333">Prototype released — share your feedback to improve the UI.</p>
       </aside>
     </section>
 
     <section id="team" style="margin-top:20px">
-      <h3 style="margin-bottom:10px;color:#1e6a70">أسماء الصُنّاع</h3>
+      <h3 style="margin-bottom:10px;color:#1e6a70">Creators</h3>
       <div class="creators">
         <div class="creator">Mohamed Tamer</div>
         <div class="creator">Moemen Sherif</div>
@@ -159,7 +171,7 @@
         Upload a flower photo and get predictions with Wikipedia info, 
         blooming period (DuckDuckGo search), and location links (Google Maps).
       </p>
-      <button class="close-btn" onclick="closeModal()">إغلاق</button>
+      <button class="close-btn" onclick="closeModal()">Close</button>
     </div>
   </div>
 
